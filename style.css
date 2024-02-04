@@ -4,7 +4,41 @@
   box-sizing: border-box;
 }
 
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+
 .card-grid {
   display: flex;
-  flex-direction: row;
+  gap: 10px;
+}
+
+.card-block {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
+.card-info {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.card {
+  padding: 15px;
+  margin-block: 5px;
+}
+
+.card > p {
+  padding-block: 10px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
